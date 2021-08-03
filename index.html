@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        img {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #search-panel {
+            background-color: gainsboro;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+        }
+        #search-panel>p {
+            font-weight: 800;
+        }
+        #search-panel>input {
+            margin: 1rem 0;
+        }
+        #btn-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        #misc-container {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: stretch;
+        }
+        #special-searches {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        #links {
+            background-color: aquamarine;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #mailto {
+            background-color: lightblue;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #mailto-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="google.jpg" alt="Google"/>
+    <div id="search-panel">
+        <p>Search the web using Google!</p>
+        <input type="text" placeholder="Search..." name="search"/>
+        <div id="btn-menu">
+            <button type="submit">Google Search</button>
+            <button type="submit">I am feeling lucky</button>
+        </div>
+    </div>
+    <div id="misc-container">
+        <div id="special-searches">
+            <p>Special Searches</p>
+            <a href="#">Stanford Search</a>
+            <a href="#">Linux Search</a>
+        </div>
+        <div id="links">
+            <a href="#">Help!</a>
+            <a href="#">About Google!</a>
+            <a href="#">Company Info</a>
+            <a href="#">Google Logos</a>
+        </div>
+        <div id="mailto">
+            <p>Get Google! updates monthly:</p>
+            <input type="email" name="email"/>
+            <div id="mailto-menu">
+                <button type="submit">Google Search</button>
+                <a href="#">Archive</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
